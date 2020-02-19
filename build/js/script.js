@@ -1,0 +1,1 @@
+document.addEventListener("click",function(e){var t=e.toElement;t.classList.contains("worker__price")&&(t.classList.toggle("worker__price--chosen"),t.classList.contains("worker__price--chosen")?t.innerText="Lisätty listalle":t.innerText="Pyydä tarjous!")});

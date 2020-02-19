@@ -223,11 +223,13 @@ body {
     line-height: 1;
 }
 
-.worker__price:hover,
-.worker__price:focus {
+.worker__price:hover {
     cursor: pointer;
     background-color: #8bd000;
-    color: white;
+    color: white;   
+}
+
+.worker__price:focus {
     outline: none;
 }
 
