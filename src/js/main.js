@@ -11,9 +11,41 @@
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.filter__btn').forEach(function(item) {
-        item.addEventListener('click', function() {
-            item.classList.toggle('filter__btn--chosen');
+    // array of each worker's skillset
+    var workerTags = document.querySelectorAll('.worker-tags');
+    var chosenTags = null;
+
+    document.querySelectorAll('.filter__btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            btn.classList.toggle('filter__btn--chosen');
+
+            // array of all checked tags
+            chosenTags = document.querySelectorAll('.filter__btn--chosen');
+
+            // show all workers if there're no checked tags, and hide otherwise
+            if (chosenTags.length == 0) {
+                document.querySelectorAll('.worker').forEach(function(worker) {
+                    worker.style.display = 'flex';
+                });
+            } else {
+                document.querySelectorAll('.worker').forEach(function(worker) {
+                    worker.style.display = 'none';
+                });
+            }
+
+            filterFunc(workerTags, chosenTags);
         })
     })
 })
+
+function filterFunc(workerTags, chosenTags) {
+    workerTags.forEach(function(workerTag) {
+        // for each skillset we iterate through all checked tags
+        // if any checked tag is in the skillset, we show a worker
+        chosenTags.forEach(function(chosenTag) {
+            if (workerTag.innerText.indexOf(chosenTag.innerText) > -1) {
+                workerTag.parentElement.parentElement.style.display = 'flex';
+            }
+        })
+    })
+}
