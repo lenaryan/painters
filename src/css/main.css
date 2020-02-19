@@ -203,3 +203,51 @@ body {
     flex-wrap: wrap;
     width: 80%;
 }
+
+.worker__details {
+    align-self: stretch;
+    border-left: 1px dotted #ddd;
+    padding-left: 20px;
+    width: 22%;
+}
+
+.worker__price {
+    border: 1px solid #548235;
+    color: #548235;
+    background-color: white;
+    white-space: nowrap;
+    font-family: 'MyriadPro',sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    line-height: 1;
+}
+
+.worker__price:hover,
+.worker__price:focus {
+    cursor: pointer;
+    background-color: #8bd000;
+    color: white;
+    outline: none;
+}
+
+.worker__projects {
+    background: url(/src/images/icon-home-grey.svg) no-repeat top center;
+    display: inline-block;
+    padding-top: 25px;
+    background-size: 20px;
+    margin-top: 20px;
+    margin-left: 15px;
+    font-family: 'MyriadPro-Semibold',sans-serif;
+    font-size: 13px;
+}
+
+.worker__price--chosen {
+    background-color: #6ecd5b;
+    color: white;
+}
+
+.worker__price--chosen:before {
+    content: '✔';
+    margin-right: 5px;
+}
