@@ -64,17 +64,22 @@ body {
     color: #282828;
 }
 
-.filter__btn--active {
-    color: white;
-    background-color: #6ecd5b;
-    border-color: #6ecd5b;
-}
-
 .filter__btn:hover,
 .filter__btn:focus {
     outline: none;
     cursor: pointer;
     background-color: #f5f5f5;
+}
+
+.filter__btn--chosen {
+    color: white;
+    background-color: #6ecd5b;
+    border-color: #6ecd5b;
+}
+
+.filter__btn--chosen:hover,
+.filter__btn--chosen:focus {
+    background-color: #4fbc39;
 }
 
 .filter__title {

@@ -9,3 +9,11 @@
         }
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.filter__btn').forEach(function(item) {
+        item.addEventListener('click', function() {
+            item.classList.toggle('filter__btn--chosen');
+        })
+    })
+})
