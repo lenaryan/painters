@@ -100,3 +100,33 @@ body {
     text-align: center;
     font-size: 15px;
 }
+
+.worker {
+    display: flex;
+    border-bottom: 1px solid #e2e2e1;
+    align-items: flex-start;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+.worker__img {
+    display: block;
+    max-width: 140px;
+    margin-right: 20px;
+}
+
+.worker__link {
+    color: #ab8b3f;
+    text-decoration: none;
+}
+
+.worker__link:hover,
+.worker__link:focus {
+    text-decoration: underline;
+}
+
+.worker__name {
+    font-family: MyriadPro-Semibold, sans-serif;
+    margin: 0 0 5px;
+    font-size: 22px;
+}
