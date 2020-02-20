@@ -170,6 +170,8 @@
     .logo {
         bottom: 5px;
         top: 5px;
+        padding: 0;
+        background: none;
     }
 }
 

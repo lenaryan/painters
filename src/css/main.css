@@ -54,6 +54,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    background: linear-gradient(to bottom, #ccc, #fff, #ccc);
+    padding: 5px;
 }
 
 .header__par {
