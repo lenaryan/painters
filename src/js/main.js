@@ -51,16 +51,14 @@ function filterFunc(workerTags, chosenTags) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    if (window.innerWidth <= 700) {
-        var mobmenu = document.querySelector('.mobile-nav')
-        document.querySelector('.mobile-menu__icon').addEventListener('click', function() {
-            if (mobmenu.classList.contains('open-menu')) {
-                mobmenu.classList.add('close-menu');
-                mobmenu.classList.remove('open-menu');
-            } else {
-                mobmenu.classList.remove('close-menu');
-                mobmenu.classList.add('open-menu');
-            }
-        })
-    }
+    var mobmenu = document.querySelector('.mobile-nav')
+    document.querySelector('.mobile-menu__icon').addEventListener('click', function() {
+        if (mobmenu.classList.contains('open-menu')) {
+            mobmenu.classList.add('close-menu');
+            mobmenu.classList.remove('open-menu');
+        } else {
+            mobmenu.classList.remove('close-menu');
+            mobmenu.classList.add('open-menu');
+        }
+    })
 })
