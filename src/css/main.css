@@ -128,7 +128,112 @@ body {
     display: block;
 }
 
+.search {
+    background: linear-gradient(to top,#e2e2e1,#fffffe);
+    padding: 12px 0;
+}
 
+.search__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search__title {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'MyriadPro-Bold', sans-serif;
+    font-size: 14px;
+}
+
+.search__form {
+    position: relative;
+}
+
+.form__input {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 300px;
+    padding: 10px 20px 15px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    font-family: 'MyriadPro',sans-serif;
+    font-size: 17px;
+    color: #4f4f4f;
+}
+
+.form__submit {
+    position: absolute;
+    z-index: 2;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: url(/src/images/icon-search.svg) no-repeat center;
+    background-size: contain;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+}
+
+.sort__title {
+    margin: 0 10px 0 0;
+    text-transform: uppercase;
+    font-family: 'MyriadPro-Bold', sans-serif;
+    font-size: 14px;
+}
+
+.sort {
+    display: flex;
+    align-items: center;
+}
+
+.sort-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.sort-list__item {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.sort-list__btn {
+    background: none;
+    padding: 0;
+    border: none;
+    font-size: 14px;
+    font-family: 'MyriadPro',sans-serif;
+    color: #3a3f6d;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.sort-list__btn:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 3px;
+    bottom: -5px;
+    background-color: #3a3f6d;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.sort-list__btn:hover,
+.sort-list__btn:focus {
+    outline: none;
+    cursor: pointer;
+    color: #282828;
+}
+
+.sort-list__btn:hover:after,
+.sort-list__btn:focus:after {
+    opacity: 1;
+}
 
 .filter__tags {
     margin: 0;
@@ -174,7 +279,7 @@ body {
 .filter__title {
     font-family: MyriadPro-Bold, sans-serif;
     margin: 0;
-    font-size: 15px;
+    font-size: 14px;
     text-transform: uppercase;
 }
 
