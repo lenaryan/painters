@@ -27,6 +27,7 @@
 
     .header-nav {
         padding: 0;
+        position: relative;
     }
 
     .header-nav__container {
@@ -35,12 +36,20 @@
 
     .mobile-nav {
         margin-left: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 100;
     }
 
     .mobile-nav__list {
         margin: 0;
         padding: 0;
         background-color: #5e5748;
+    }
+
+    .mobile-nav__item {
+        list-style: none;
     }
 
     .mobile-nav__link {
@@ -52,8 +61,37 @@
         font-size: 18px;
     }
 
+    .open-menu {
+        display: block;
+        animation: open-menu 0.7s ease-in-out forwards;
+        transform-origin: top right;
+    }
 
+    @keyframes open-menu {
+        0% {
+            transform: scale(0);
+        }
 
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .close-menu {
+        display: block;
+        animation: close-menu 0.7s ease-in-out forwards;
+        transform-origin: top right;
+    }
+
+    @keyframes close-menu {
+        0% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(0);
+        }
+    }
 
     .worker {
         flex-flow: column;
