@@ -68,6 +68,68 @@ body {
     display: block;
 }
 
+.header-nav {
+    background-color: #867d67;
+    padding: 15px 0;
+}
+
+.nav-menu__img {
+    display: block;
+    width: 18px;
+}
+
+.header-nav__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    margin-left: 160px;
+}
+
+.get-price {
+    width: 140px;
+    white-space: nowrap;
+    font-family: MyriadPro,sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    line-height: 1;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.get-price:hover,
+.get-price:focus {
+    outline: none;
+}
+
+.nav-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu__item {
+    list-style-type: none;
+}
+
+.nav-menu__link {
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 17px;
+    display: block;
+}
+
+
+
 .filter__tags {
     margin: 0;
     padding: 0;
