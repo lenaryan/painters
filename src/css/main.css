@@ -88,6 +88,11 @@ body {
     margin-left: 160px;
 }
 
+.mobile-nav,
+.mobile-menu {
+    display: none;
+}
+
 .get-price {
     width: 140px;
     white-space: nowrap;

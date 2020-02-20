@@ -1,4 +1,60 @@
 @media (max-width: 700px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .get-price {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+        padding: 0;
+        border: none;
+        background: none;
+        margin-left: auto;
+    }
+
+    .mobile-menu:focus {
+        outline: none;
+    }
+
+    .mobile-menu__icon {
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+
+    .header-nav {
+        padding: 0;
+    }
+
+    .header-nav__container {
+        padding: 15px 0;
+    }
+
+    .mobile-nav {
+        margin-left: 0;
+    }
+
+    .mobile-nav__list {
+        margin: 0;
+        padding: 0;
+        background-color: #5e5748;
+    }
+
+    .mobile-nav__link {
+        border-bottom: 1px solid #867d67;
+        padding: 15px;
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+
+
+
     .worker {
         flex-flow: column;
     }
