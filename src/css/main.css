@@ -105,6 +105,7 @@ body {
     background-color: transparent;
     opacity: 0.6;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .get-price:hover,
@@ -258,7 +259,7 @@ body {
     font-size: 14px;
     background-color: white;
     border: 1px solid #867d67;
-    border-radius: 30px;
+    border-radius: 5px;
     padding: 5px 15px;
     color: #282828;
     font-family: 'MyriadPro',sans-serif;
@@ -274,13 +275,13 @@ body {
 
 .filter__btn--chosen {
     color: white;
-    background-color: #6ecd5b;
-    border-color: #6ecd5b;
+    background-color: #867d67;
+    border-color: #867d67;
 }
 
 .filter__btn--chosen:hover,
 .filter__btn--chosen:focus {
-    background-color: #4fbc39;
+    background-color: #ab8b3f;
 }
 
 .filter__title {
@@ -418,8 +419,8 @@ body {
 }
 
 .worker__price {
-    border: 1px solid #548235;
-    color: #548235;
+    border: 1px solid #ab8b3f;
+    color: #ab8b3f;
     background-color: white;
     white-space: nowrap;
     font-family: 'MyriadPro',sans-serif;
@@ -427,11 +428,12 @@ body {
     padding: 10px;
     width: 100%;
     line-height: 1;
+    border-radius: 5px;
 }
 
 .worker__price:hover {
     cursor: pointer;
-    background-color: #8bd000;
+    background-color: #ab8b3f;
     color: white;   
 }
 
@@ -451,7 +453,8 @@ body {
 }
 
 .worker__price--chosen {
-    background-color: #6ecd5b;
+    background-color: #867d67;
+    border-color: #867d67;
     color: white;
 }
 
